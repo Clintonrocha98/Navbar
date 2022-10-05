@@ -15,7 +15,7 @@ Uma navbar responsiva que mostrará o menu de hambúrguer para dispositivos meno
 - classList.toggle()
 
 
-[Link da pagina](https://clintonrocha98.github.io/navbar/)
+[Link da pagina](https://clintonrocha98.github.io/Navbar/)
 
 <img align="center">
   <img src=".github/1.png" width="100%" />
