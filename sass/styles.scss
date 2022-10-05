@@ -87,6 +87,10 @@
             height: auto;
             li{
                 &:hover{
+                    padding-left: 1rem;
+                    background-color: white; 
+                }
+                &:hover{
                     a{
                         color: rgb(12, 189, 201); 
                     }
