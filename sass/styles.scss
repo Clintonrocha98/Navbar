@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    
+    box-shadow: 0px 5px 10px 5px rgba(0,0,0,0.5);
+    .warrap-header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 1rem;
+        h1{
+            font-weight: 700;
+            font-size: 2rem;
+            span{
+                color: rgb(12, 189, 201)
+            }
+        }
+        .btn-menu{
+            display: inline-block;
+            cursor: pointer;
+            margin: 10px;
+            
+            .bar-1, .bar-2, .bar-3{
+                width: 30px;
+                height: 3px;
+                background-color: black;
+                margin: 6px 0;
+                transition: 0.4s;
+            }
+            
+        }
+        .change .bar-1{
+            transform: translate(0, 8px) rotate(-45deg);
+        }
+        .change .bar-2{
+            opacity: 0;
+        }
+        .change .bar-3{
+            transform: translate(0,-10px) rotate(45deg);
+        }
+    }
+    .links{
+        list-style: none;
+        overflow: hidden;
+        height: 0;
+        transition: all 0.3s linear;
+        li{
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            &:hover{
+                padding-left: 1.5rem;
+                background-color: rgb(12, 189, 201); 
+            }
+            a{
+                font-size: 1.15rem;
+                font-weight: 400;
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+    .show-links{
+        height: 10rem;
+    }
+    .icons{
+        display: none;
+    }
+}
+@media (min-width: 800px) {
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 1rem;
+        .warrap-header{
+            .btn-menu{
+                display: none;
+            }
+        }
+        .links{
+            display: flex;
+            gap: 10px;
+            height: auto;
+            li{
+                &:hover{
+                    a{
+                        color: rgb(12, 189, 201); 
+                    }
+                }
+            }
+        }
+        .icons{
+            display: flex;
+            gap: 20px;
+            transition: 1s ease-in-out;
+        
+            i:hover{
+                transform: scale(120%);
+                color: rgb(12, 189, 201);
+                cursor: pointer;
+            }
+        }
+    }
+    
+}

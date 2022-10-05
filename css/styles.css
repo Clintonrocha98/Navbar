@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.5);
+}
+.container .warrap-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 1rem;
+}
+.container .warrap-header h1 {
+  font-weight: 700;
+  font-size: 2rem;
+}
+.container .warrap-header h1 span {
+  color: rgb(12, 189, 201);
+}
+.container .warrap-header .btn-menu {
+  display: inline-block;
+  cursor: pointer;
+  margin: 10px;
+}
+.container .warrap-header .btn-menu .bar-1, .container .warrap-header .btn-menu .bar-2, .container .warrap-header .btn-menu .bar-3 {
+  width: 30px;
+  height: 3px;
+  background-color: black;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+.container .warrap-header .change .bar-1 {
+  transform: translate(0, 8px) rotate(-45deg);
+}
+.container .warrap-header .change .bar-2 {
+  opacity: 0;
+}
+.container .warrap-header .change .bar-3 {
+  transform: translate(0, -10px) rotate(45deg);
+}
+.container .links {
+  list-style: none;
+  overflow: hidden;
+  height: 0;
+  transition: all 0.3s linear;
+}
+.container .links li {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+.container .links li:hover {
+  padding-left: 1.5rem;
+  background-color: rgb(12, 189, 201);
+}
+.container .links li a {
+  font-size: 1.15rem;
+  font-weight: 400;
+  text-decoration: none;
+  color: black;
+}
+.container .show-links {
+  height: 10rem;
+}
+.container .icons {
+  display: none;
+}
+
+@media (min-width: 800px) {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem;
+  }
+  .container .warrap-header .btn-menu {
+    display: none;
+  }
+  .container .links {
+    display: flex;
+    gap: 10px;
+    height: auto;
+  }
+  .container .links li:hover a {
+    color: rgb(12, 189, 201);
+  }
+  .container .icons {
+    display: flex;
+    gap: 20px;
+    transition: 1s ease-in-out;
+  }
+  .container .icons i:hover {
+    transform: scale(120%);
+    color: rgb(12, 189, 201);
+    cursor: pointer;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
